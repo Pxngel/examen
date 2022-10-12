@@ -1,0 +1,34 @@
+
+
+  <mat-drawer #drawer class="example-sidenav" mode="side" style="width:20vh ;">
+    <div class="mt-10 py-4 flex">
+      <h3 class="mx-auto text-3xl">My App</h3>
+    </div>
+
+    <div class="mt-10 py-4" (click)="drawer.toggle()" routerLink="/" routerLinkActive="router-link-active" >
+      <button  color="accent" mat-button style="width: 100%;"><h3 class="py-4">Dashboard</h3></button>
+    </div>
+    <div class="mt-10 py-4"  (click)="drawer.toggle()" routerLink="/valor" routerLinkActive="router-link-active">
+      <button mat-button  color="accent" style="width: 100%;"><h3 class="py-4">Valor del Protafolio</h3></button>
+    </div>
+    <div class="mt-10 py-4"  (click)="drawer.toggle()" routerLink="/saldo" routerLinkActive="router-link-active">
+      <button mat-button  color="accent" style="width: 100%;"><h3 class="py-4">Saldos</h3></button>
+    </div>
+    <div class="mt-10 py-4"  (click)="drawer.toggle()" routerLink="/accion" routerLinkActive="router-link-active">
+      <button mat-button  color="accent" style="width: 100%;"><h3 class="py-4">Acciones</h3></button>
+    </div>
+    <div class="mt-10 py-4"  (click)="drawer.toggle()" routerLink="/movimiento" routerLinkActive="router-link-active">
+      <button mat-button  color="accent" style="width: 100%;"><h3 class="py-4">Movimientos</h3></button>
+    </div>
+  </mat-drawer>
+
+  <mat-toolbar>
+    <span class="mr-10">My App</span>
+   <span class="example-spacer"></span>
+
+   <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  </mat-toolbar>
+

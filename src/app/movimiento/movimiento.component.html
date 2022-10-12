@@ -1,0 +1,28 @@
+
+<div class="mt-10 flex">
+  <div class="mt-10 mx-auto">
+    <label for="search">search: </label>
+    <input type="text" [(ngModel)]="search" placeholder="search"/>
+  </div>
+</div>
+
+<div class="flex">
+  <div class="mx-auto mt-10">
+    <table class="table-auto">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Url</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of generation1 | filterSearch:search">
+          <td class="mx-10">{{item.name}}</td>
+          <td class="mx-10">{{item.url}}</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+</div>

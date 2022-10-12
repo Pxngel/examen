@@ -1,0 +1,24 @@
+<div class="flex">
+  <div class="mx-auto">
+
+      <apx-chart
+      [series]="series"
+      [chart]="chart"
+      [title]="title"
+      [xaxis]="xaxis"
+    ></apx-chart>
+
+    <div class="flex">
+      <div class="mx-auto">
+        <button (click)="Moves()" mat-button color="primary">Moves</button>
+      </div>
+      <div class="mx-auto">
+        <button (click)="specie()" mat-button color="primary">Species</button>
+      </div>
+      <div class="mx-auto">
+        <button (click)="types()" mat-button color="primary">Types</button>
+      </div>
+    </div>
+  </div>
+</div>
+
